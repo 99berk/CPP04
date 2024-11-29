@@ -4,6 +4,7 @@ CXXFLAG = -Wall -Wextra -Werror -std=c++98
 
 SRC = 	main.cpp\
 		Animal.cpp\
+		Brain.cpp\
 		Cat.cpp\
 		Dog.cpp\
 		WrongCat.cpp\
