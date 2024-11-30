@@ -6,10 +6,10 @@ WrongAnimal::WrongAnimal(void)
     if (this->type.empty())
     {
         this->type = "WrongAnimal";
-        std::cout << "WRONGANİMAL " << this->type << " Default Constructor Called." << std::endl;
+        std::cout << "WRONGANIMAL " << this->type << " Default Constructor Called." << std::endl;
     }
     else
-        std::cout << "WRONGANİMAL " << this->type << " Default Constructor Called." << std::endl;
+        std::cout << "WRONGANIMAL " << this->type << " Default Constructor Called." << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& other)
@@ -29,18 +29,23 @@ WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other)
 WrongAnimal::WrongAnimal(const std::string type)
 {
     this->type = type;
-    std::cout << "WRONGANİMAL " << this->type << " Constructor Called." << std::endl;
+    std::cout << "WRONGANIMAL " << this->type << " Constructor Called." << std::endl;
 }
 
 WrongAnimal::~WrongAnimal()
 {
     if (this->type.empty())
-        std::cout << "WRONGANİMAL Default Destructor Called." << std::endl;
+        std::cout << "WRONGANIMAL Default Destructor Called." << std::endl;
     else
-        std::cout << "WRONGANİMAL " << this->type << " Destructor Called." << std::endl;
+        std::cout << "WRONGANIMAL " << this->type << " Destructor Called." << std::endl;
 }
 
 void WrongAnimal::makeSound(void) const
 {
     std::cout << "WrongAnimal Sound." << std::endl;
+}
+
+std::string WrongAnimal::getType(void) const
+{
+    return this->type;
 }

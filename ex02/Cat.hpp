@@ -16,5 +16,5 @@ class Cat : public Animal
         void makeSound(void) const;
         std::string getIdeas(int i) const;
         void setIdea(int i, const std::string idea);
-        void printIdeas(int i = 0);
+        void printIdeas(int i = 0) const;
 };

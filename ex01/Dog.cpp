@@ -20,7 +20,7 @@ Dog& Dog::operator=(const Dog& other)
     std::cout << "Copy Assigment Operator Called." << std::endl;
     if(this != &other)
         this->type = other.type;
-        *this->_brain = *other._brain;
+    *this->_brain = *other._brain;
     return (*this);
 }
 
@@ -52,7 +52,7 @@ void Dog::setIdea(int i, const std::string idea)
     this->_brain->ideas[i] = idea;
 }
 
-void Dog::printIdeas( int num )
+void Dog::printIdeas(int num) const
 {
     for (int i = 0; i < 5; i++)
         std::cout << "Idea " << i + 1 << " " << this->getIdeas(i) << std::endl;

@@ -52,7 +52,7 @@ void Cat::setIdea(int i, const std::string idea)
     this->_brain->ideas[i] = idea;
 }
 
-void Cat::printIdeas(int num)
+void Cat::printIdeas(int num) const
 {
     for (int i = 0; i < 5; i++)
         std::cout << "Idea " << i + 1 << " " << this->getIdeas(i) << std::endl;
